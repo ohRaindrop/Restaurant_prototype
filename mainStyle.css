@@ -83,8 +83,30 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/***/
-/***/
+
 /***/
 
+.img_menu{
+        width:100px;
+        height:100px;
+}
+
+/***/
+
+#reservation-form{ 
+    background-color: #d8d8d8;
+}
+
+#clients{
+
+}
+
+#events{
+
+}
+
+/***/
+/***/
+/***/
+/***/
 /* * FOOTER STYLE */
