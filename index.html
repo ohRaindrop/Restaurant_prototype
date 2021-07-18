@@ -487,43 +487,100 @@
 
     </section> -->
 
-    <section class="container-fluid" id="reservation-form">
-        <h2></h2>Make online reservation</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae
-            maiores quae qui.
-        </p>
-        <form class="row">
-            <div class="col-12 col-md-6">
-                <label> nome </label>
-                <input>
+    <section class="container-fluid mb-5" id="reservation-form">
+        <div class="row justify-content-center">
+            <h2 class="text-center my-3"> Make online reservation</h2>
+            <p class="text-center mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae
+                maiores quae qui.
+            </p>
+        </div>
+        <form>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <div class="input-group d-flex justify-content-center">
+                        <label class="input-group-text" for="name">Name</label>
+                        <input type="text" class="form-text" id="name">
+                    </div>
 
-                <label> telefono </label>
-                <input>
+                    <div class="input-group d-flex justify-content-center">
+                        <label class="input-group-text" for="tel">Phone number</label>
+                        <input type="tel" class="form-text" id="tel">
+                    </div>
 
-                <label> email </label>
-                <input>
+                    <div class="input-group d-flex justify-content-center">
+                        <label class="input-group-text" for="email">Email</label>
+                        <input type="text" class="form-text" id="email">
+                    </div>
+                </div>
 
+                <div class="col-12 col-md-6">
+                    <div class="input-group d-flex justify-content-center">
+                        <label class="input-group-text" for="people">Number of people</label>
+                        <input type="number" class="form-text" id="people" min="0">
+                    </div>
+
+                    <div class="input-group d-flex justify-content-center">
+                        <label class="input-group-text" for="date">Date</label>
+                        <input type="date" class="form-text" id="date">
+                    </div>
+
+                    <div class="input-group d-flex justify-content-center">
+                        <label class="input-group-text" for="hour">Time</label>
+                        <input type="time" class="form-text" id="hour">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-                <label> persone </label>
-                <input>
 
-                <label> data </label>
-                <input>
-
-                <label> orario </label>
-                <input>
-
-            </div>
             <div class="row d-flex justify-content-center align-items-center">
-                <button class="col-3"> reserve table</button>
+                <button class="col-3 btn"> RESERVE A TABLE </button>
             </div>
         </form>
     </section>
 
     <section class="container-fluid" id="clients">
-
+        <div class="row">
+            <div class="col">
+                <h2> What our clients say about us </h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam assumenda hic officiis tenetur
+                    minima ex a non recusandae.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="carousel slide" id="carouselExampleInterval" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="7000">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="7000">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="carousel">
+                    <!-- TO DO: 
+                        BTN FOR FORWARD AND BACK
+                        PICTURE NEXT TO TEXT FOR ODD NUMBERS
+                        TEXT NEXT TO PICTURE FOR NOT*ODD NUMBERS-->
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="container-fluid" id="events">

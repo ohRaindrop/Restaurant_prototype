@@ -97,6 +97,10 @@ body, html{
     background-color: #d8d8d8;
 }
 
+.input-group{
+    width: 100%;
+}
+
 #clients{
 
 }
