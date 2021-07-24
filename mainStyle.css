@@ -101,12 +101,49 @@ body, html{
     width: 100%;
 }
 
+.carousel-item{
+    width: 80%;
+}
+
+.review-portrait{
+    margin-left: 5rem;
+    width:25vw ;
+    height: auto;
+    border-radius:50%;
+    float: left;
+    clear: both;
+}
+
+.quote{
+    float:inline-start ;
+    vertical-align:middle;
+    position: relative;
+    left: 3rem;
+    right: 3rem;
+    top: 2rem;
+}
+
+q {
+    font-size:1.2rem;
+    text-align: justify;
+}
+
+.author{
+    font-size:1rem;
+    color: darkgrey;
+}
+
+
 #clients{
 
 }
 
-#events{
+.event-container{
+    background-image: url("https://images.unsplash.com/photo-1484156818044-c040038b0719?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    height:65vh;
 }
 
 /***/

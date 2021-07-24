@@ -146,13 +146,13 @@
 
     </section>
 
-    <div class="container-fluid" id=" third-intro">
+    <!-- <div class="container-fluid" id=" third-intro">
         <div class="row margin-y-lg">
             <div class="img-container">
                 <h3> Enjoy our special variety of food, from all over Asia<h3>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <section class="container" id="menu-options">
@@ -498,36 +498,36 @@
         <form>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 text-center">
-                    <div class="input-group d-flex justify-content-center">
-                        <label class="input-group-text" for="name">Name</label>
-                        <input type="text" class="form-text" id="name">
+                    <div class="form-floating d-flex justify-content-center">
+                        <input type="text" class="form-control" id="name" placeholder="your name">
+                        <label for="name">Name</label>
                     </div>
 
-                    <div class="input-group d-flex justify-content-center">
-                        <label class="input-group-text" for="tel">Phone number</label>
-                        <input type="tel" class="form-text" id="tel">
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="tel" placeholder="your phone">
+                        <label for="tel">Phone number</label>
                     </div>
 
-                    <div class="input-group d-flex justify-content-center">
-                        <label class="input-group-text" for="email">Email</label>
-                        <input type="text" class="form-text" id="email">
+                    <div class="form-floating d-flex justify-content-center">
+                        <input type="text" class="form-control" id="email" placeholder="your email">
+                        <label for="email">Email</label>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <div class="input-group d-flex justify-content-center">
-                        <label class="input-group-text" for="people">Number of people</label>
-                        <input type="number" class="form-text" id="people" min="0">
+                    <div class="form-floating d-flex justify-content-center">
+                        <input type="number" class="form-control" id="people" min="0" placeholder="1">
+                        <label for="people">Number of people</label>
                     </div>
 
-                    <div class="input-group d-flex justify-content-center">
-                        <label class="input-group-text" for="date">Date</label>
-                        <input type="date" class="form-text" id="date">
+                    <div class="form-floating d-flex justify-content-center">
+                        <input type="date" class="form-control" id="date" placeholder="today">
+                        <label for="date">Date</label>
                     </div>
 
-                    <div class="input-group d-flex justify-content-center">
-                        <label class="input-group-text" for="hour">Time</label>
-                        <input type="time" class="form-text" id="hour">
+                    <div class="form-floating d-flex justify-content-center">
+                        <input type="time" class="form-control" id="hour" placeholder="19:00">
+                        <label for="hour">Time</label>
                     </div>
                 </div>
             </div>
@@ -540,7 +540,7 @@
 
     <section class="container-fluid" id="clients">
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <h2> What our clients say about us </h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam assumenda hic officiis tenetur
@@ -550,46 +550,144 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="carousel slide" id="carouselExampleInterval" data-bs-ride="carousel">
+                <div class="carousel carousel-dark slide" id="carousel-review" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-review" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="review"></button>
+                        <button type="button" data-bs-target="#carousel-review" data-bs-slide-to="1"
+                            aria-label="review"></button>
+                        <button type="button" data-bs-target="#carousel-review" data-bs-slide-to="2"
+                            aria-label="review"></button>
+                    </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="7000">
-                            <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-item m-5 active" data-bs-interval="7000">
+                            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydHJhaXR8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                class="review-portrait" alt="picture of a client">
+                            <span class="quote">
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem
+                                    tenetur
+                                    autem veniam
+                                    magni ipsam, quam eos, officiis possimus ratione culpa non sapiente et eveniet
+                                    dignissimos labore, expedita natus enim!</q>
+                                <br>
+                                <span class="author">- client 1 </span>
+                            </span>
                         </div>
-                        <div class="carousel-item" data-bs-interval="7000">
-                            <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-item m-5" data-bs-interval="7000">
+                            <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHBvcnRyYWl0fGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                class="review-portrait" alt="picture of a client">
+                            <span class="quote">
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem
+                                    tenetur
+                                    autem veniam
+                                    magni ipsam, quam eos, officiis possimus ratione culpa non sapiente et eveniet
+                                    dignissimos labore, expedita natus enim!</q>
+                                <br>
+                                <span class="author">- client 2 </span>
+                            </span>
                         </div>
-                        <div class="carousel-item" data-bs-interval="7000">
-                            <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-item m-5" data-bs-interval="7000">
+                            <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHBvcnRyYWl0fGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                class="review-portrait" alt="picture of a client">
+                            <span class="quote">
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem
+                                    tenetur
+                                    autem
+                                    veniam
+                                    magni ipsam, quam eos, officiis possimus ratione culpa non sapiente et eveniet
+                                    dignissimos labore, expedita natus enim!</q>
+                                <br>
+                                <span class="author">- client 3 </span>
+                            </span>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-review"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-review"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="carousel">
-                    <!-- TO DO: 
-                        BTN FOR FORWARD AND BACK
-                        PICTURE NEXT TO TEXT FOR ODD NUMBERS
-                        TEXT NEXT TO PICTURE FOR NOT*ODD NUMBERS-->
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="container-fluid" id="events">
+    <section class="container" id="events">
+        <div class="row">
+            <div class="col text-center">
+                <h2> Our future events </h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam assumenda hic officiis tenetur
+                    minima ex a non recusandae.
+                </p>
+            </div>
+        </div>
+        <div class="row" id="main-event">
+            <div class="col-4 float-start my-5">
+                <div class="event-date text-uppercase mt-5"> 1st january 2021 </div>
+                <h2 class="event-title"> title of the event </h2>
+                <p class="event-descr my-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas deserunt ipsam sint, eos
+                    maxime
+                    rerum hic ratione optio, nisi eaque quae quos. Nihil laborum unde porro quidem nesciunt
+                    tempore.
+                </p>
+                <a class="btn btn-outline-info btn-outline-custom event-reserve text-capitalize m-4">
+                    reserve a table
+                </a>
+            </div>
+        </div>
+        <!-- TODO : add background to main event-->
 
+
+        <div class="row next-events" id="next-events">
+            <div class="col-2 next-event-date">
+                2 jan
+            </div>
+            <h3 class="col-6 next-event-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
+            <div class="col-2">
+                <a href="" class="btn btn-outline-info btn-outline-custom event-reserve text-capitalize m-4">
+                    reserve a table
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 next-event-date">
+                3 jan
+            </div>
+            <h3 class="col-6 next-event-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
+            <div class="col-2">
+                <a href="" class="btn btn-outline-info btn-outline-custom event-reserve text-capitalize m-4">
+                    reserve a table
+                </a>
+            </div>
+        </div>
+        </div>
     </section>
 
-    <!-- <section class="container-fluid" id="newsletter">
+    <section class="container" id="newsletter">
+        <div class="row">
+            <div class="col-6">
+                <h2> Newsletter</h2>
+                <p> please subscribe to our newsletter if you'd like to be updated</p>
+                <form action="">
+                    <div class="form-floating d-flex justify-content-center">
+                        <input type="email" class="form-control" id="news-email" placeholder="your email">
+                        <label for="news-email">your email</label>
 
-    </section> -->
+                        <button class="btn d-flex justify-content-center align-items-center"> RESERVE A TABLE </button>
+                </form>
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer>
