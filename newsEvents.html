@@ -132,51 +132,59 @@
             </div>
         </section>
 
-        <section class="container" id="newsletter">
-            <div class="row">
-                <div class="col-5 text-center">
-                    <h2> Newsletter</h2>
-                    <p> please subscribe to our newsletter if you'd like to be updated</p>
-                    <form action="">
-                        <div class="form-floating d-flex justify-content-center">
-                            <input type="email" class="form-control" id="news-email" placeholder="your email">
-                            <label for="news-email">your email</label>
+        <section class="container-fluid" id="newsletter">
+            <div class="container">
+                <div class="row py-5 text-center news-row">
+                    <div class="col m-auto">
+                        <h2 class="section-title order-0"> Newsletter</h2>
+                        <p class="order-1"> please subscribe to our newsletter if you'd like to be updated</p>
+                        <form action="" method="post" class="d-flex justify-content-center align-content-center">
+                            <div class="form-floating float-start me-2">
+                                <input type="email" class="form-control" id="news-email" placeholder="your email">
+                                <label for="news-email">Email</label>
+                            </div>
 
-                            <button
-                                class="btn btn-outline-primary btn-outline-custom d-flex justify-content-center align-items-center text-capitalize">
+                            <button class="btn btn-outline-custom" type="submit">
                                 subscribe
                             </button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-4">
-                    <div class="col-title"> about us</div>
-                    <p>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row margin-y-lg">
+                <div class="col-12 order-0 col-sm-4">
+                    <div class="col-title  my-3"> about us</div>
+                    <p class="col-content">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eligendi sint excepturi
                         maiores asperiores doloribus sed voluptatibus labore, maxime nisi, quae exercitationem
                         temporibus eum adipisci! Voluptate numquam hic molestias impedit?
                     </p>
                 </div>
-                <div class="col-4">
-                    <div class="col-title"> contact us </div>
-                    <p>
-                        address <br>
-                        telephone <br>
+                <div class="col-12 order-1 col-sm-4">
+                    <div class="col-title   my-3"> contact us </div>
+                    <p class="col-content">
+                        <span class="material-icons">
+                            location_on
+                        </span>
+                        Center of Milan, somewhere near the Dome <br>
+                        <span class="material-icons">
+                            call
+                        </span>
+                        + 123 456 7890 <br>
                         <a href="mailto:mail@mail.it"> mail@mail.it </a>
                     </p>
                 </div>
-                <div class="col-4">
-                    <div class="col-title"> opening hours </div>
-                    <p>
-                        mon-fri <br> 12:00-15:00 <br>
-                        sat <br> 18:00-02:00 <br>
+                <div class="col-12 order-2 col-sm-4">
+                    <div class="col-title my-3"> opening hours </div>
+                    <p class="col-content">
+                        mon-fri <br> 12:00-15:00 <br><br>
+                        sat <br> 18:00-02:00 <br><br>
                         sun <br> 12:00-24:00 <br>
                     </p>
                 </div>
