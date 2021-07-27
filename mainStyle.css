@@ -19,6 +19,11 @@ h2{
     letter-spacing: 3px;
 }
 
+.space{
+    height:33vh;
+}
+
+/** BUTTON */
 .btn-outline-custom{
     border-color: #283618;
     color:#283618;
@@ -33,6 +38,7 @@ h2{
     cursor: pointer;
 }
 
+/** FORMS */
 .form-floating{
     width:50%;
 }
@@ -173,17 +179,105 @@ q {
 
 }
 
-.event-container{
+
+/***/
+/***/
+/** EVENTS */
+
+
+#main-event{
     background-image: url("https://images.unsplash.com/photo-1484156818044-c040038b0719?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
     background-repeat: no-repeat;
     background-size: cover;
 
-    height:65vh;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+    
+    height:85vh;
+    margin-top: 10vh;
 }
 
-/***/
-/***/
-/***/
+.main-event-content{
+    text-align: left;   
+    color:#DDA15E;
+
+    margin-left: 50vw;
+    padding-top: 7vh;
+    
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+}
+
+.event-date{
+    text-transform:uppercase;
+    color:#BC6C25;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight:600;
+}
+
+.event-title{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.event-reserve{
+    margin:4rem;
+    margin-top:2.5rem;
+    margin-left:0;
+
+    padding:1.2rem;
+    
+    border-color: #BC6C25;
+    color:#BC6C25;
+}
+
+.event-reserve:hover{
+    background-color: rgba(255, 207, 149, 0.6);
+}
+
+.main-event-content > a:hover {
+    background-color: rgba(255, 207, 149, 0.9);
+}
+
+#next-event{
+    padding: 2rem;
+}
+
+.next-event{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.next-event-date{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding:0;
+}
+
+
+@media screen and (min-width:770px) {
+    .next-event-date{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width:990px){
+    .next-event-date{
+        font-size: 3rem;
+    }
+}
 
 
 /** NEWSLETTER */
@@ -192,7 +286,7 @@ q {
 }
 
 .news-row{
-    height:70vh;
+    height:60vh;
 }
 
 .section-title{
