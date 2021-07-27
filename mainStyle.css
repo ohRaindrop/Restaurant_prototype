@@ -142,26 +142,53 @@ h2{
     width: 100%;
 }
 
+
+/***/
+/** CAROUSEL*/
+
+.carousel-inner{
+    margin-top:3rem;
+    text-align: center;
+}
+
 .carousel-item{
-    width: 80%;
+    width:90vw;
+    margin:auto;
+}
+
+.carousel-item.active{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .review-portrait{
-    margin-left: 5rem;
-    width:25vw ;
+    width:50vw;
     height: auto;
     border-radius:50%;
     float: left;
     clear: both;
 }
 
+@media (min-width:770px) {
+    .review-portrait{
+        width:30vw;
+    }
+}
+@media (min-width:1024px) {
+    .review-portrait{
+        width:20vw;
+    }
+}
+
 .quote{
-    float:inline-start ;
+    display:inline;
     vertical-align:middle;
-    position: relative;
-    left: 3rem;
-    right: 3rem;
-    top: 2rem;
+    align-self: center;
+
+    padding:2rem;
+    margin:2rem;
 }
 
 q {
@@ -180,8 +207,8 @@ q {
 }
 
 
-/***/
-/***/
+
+
 /** EVENTS */
 
 
@@ -197,6 +224,7 @@ q {
     
     height:85vh;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .main-event-content{
