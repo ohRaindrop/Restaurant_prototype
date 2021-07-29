@@ -6,9 +6,15 @@ rgba(128, 148, 60, 0.816);rgba(202, 216, 156, 0.8);
 */
 
 /** GENERAL */
-body, html{
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
     height:100vh;
     width:100vw;
+    overflow-x: hidden;
 
     background-color: #FEFAE0;
     font-size:1rem;
@@ -146,7 +152,7 @@ label{
 .social > a {
     text-decoration: none;
     color: #FEFAE0;
-    
+
     margin:1rem;
     padding:0.5rem;
 }
@@ -236,20 +242,63 @@ label{
 
 /** MENU */
 
+.tab-container{
+    margin-top:2rem;
+    text-align: center;
+}
+
+
+.tab-container > li {
+    margin:auto;
+}
+
+.tab-container > li:hover {
+    color: #283618;
+}
+
+.tab-title{
+    border:none;
+    font-size:0.75rem;
+    color: rgba(39, 53, 24,0.5);
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav-link.tab-title.active{
+    border:none;
+    letter-spacing: 1px;
+    background-color: hsla(98, 100%, 70%, 0.15);
+    border-bottom: 1px solid #283618;
+}
+
+.tab-title:hover{
+    border:none;
+    border-bottom: 1px solid #283618;
+    color: #283618;
+}
+
+
 #menu-options > div > h2 {
     color:#283618;
     margin: 1rem 0 2rem 0;
 }
 
 .menu-element{
-    padding: 2rem 1rem 2rem 1rem;
+    height: 31vh;
+    padding: 0rem 1rem 2rem 1rem;
+    margin-bottom: 1rem;
     
     border-bottom: 1px solid rgba(96, 108, 56,0.6);
 }
 
 .img_menu{
-        height:100%;
-        width:100%;
+        height:90%;
+        width:90%;
+}
+
+.price{
+    margin-top: 2rem;
+    font-size: 1.4rem;
 }
 
 
